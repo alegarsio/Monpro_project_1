@@ -39,9 +39,9 @@ class Tree {
     {
         if (node != null)
         {
-            InOrderHelper(node.left,list)
-            list.addAll(node.projects)
             InOrderHelper(node.right,list)
+            list.addAll(node.projects)
+            InOrderHelper(node.left,list)
         }
     }
 
