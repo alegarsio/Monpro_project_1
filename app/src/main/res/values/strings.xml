@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Proritize_Mobpro</string>
+    <string name="judul_header">Daftar ProjectKu</string>
+    <string name="header_prioritas_title">Project Berdasarkan Prioritas</string>
 </resources>
