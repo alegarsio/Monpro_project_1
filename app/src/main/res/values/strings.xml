@@ -1,5 +1,16 @@
 <resources>
     <string name="app_name">Proritize_Mobpro</string>
     <string name="judul_header">Daftar ProjectKu</string>
+    <string name="tidak_ada_project">Tidak ada Project</string>
+    <string name="Ringan">Ringan</string>
+    <string name="Sedang">Sedang</string>
+    <string name="Nama_Projek">Nama Project</string>
+    <string name="Besar">Besar</string>
+    <string name="Hapus">Hapus/</string>
+    <string name ="tambah">Tambah Project</string>
+    <string name = "Lihat_Project">Lihat Project</string>
+    <string name="Prioritas">Prioritas</string>
+    <string name="input_invvalid">Invalid Input</string>
+    <string name="Helper_input">Ketik: besar, sedang, atau kecil</string>
     <string name="header_prioritas_title">Project Berdasarkan Prioritas</string>
 </resources>

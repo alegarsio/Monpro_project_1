@@ -8,6 +8,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.alegrarsio.proritize_mobpro.Method.ProjectPriorityScreen
+import com.alegrarsio.proritize_mobpro.navigation.SetUpNavGraph
 import com.alegrarsio.proritize_mobpro.ui.theme.Proritize_MobproTheme
 
 class MainActivity : ComponentActivity() {
@@ -16,7 +17,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             Proritize_MobproTheme {
-                ProjectPriorityScreen()
+                SetUpNavGraph()
             }
         }
     }

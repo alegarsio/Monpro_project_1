@@ -44,6 +44,47 @@ class Tree {
             InOrderHelper(node.left,list)
         }
     }
+    fun delete(project: Project) {
+        root = DeleteHelper(root, project)
+    }
 
+    private fun DeleteHelper(current: Node?, project: Project): Node? {
+        if (current == null) {
+            return null
+        }
+
+        if (project.priority < current.priority) {
+            current.left = DeleteHelper(current.left, project)
+        } else if (project.priority > current.priority) {
+            current.right = DeleteHelper(current.right, project)
+        } else {
+
+            current.projects.remove(project)
+            if (current.projects.isEmpty()) {
+
+                if (current.left == null) {
+                    return current.right
+                } else if (current.right == null) {
+                    return current.left
+                }
+
+
+                val successor = findMin(current.right!!)
+                current.priority = successor.priority
+                current.projects.clear()
+                current.projects.addAll(successor.projects)
+                current.right = DeleteHelper(current.right, successor.projects[0])
+            }
+        }
+        return current
+    }
+
+    private fun findMin(node: Node): Node {
+        var current = node
+        while (current.left != null) {
+            current = current.left!!
+        }
+        return current
+    }
 
 }
